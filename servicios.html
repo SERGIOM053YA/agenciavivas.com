@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Agencia de Viajes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="servicios.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="index.html">Principal</a></li>
-            </ul>
-        </nav>
-        <h1>Nuestros Servicios</h1>
+        <div class="menu container">
+            <img class="logo-1" src="Logo.webp" alt="Logo de Agencia"width= "150" height= "150">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="menu_negro.png" class="menu-icono" alt="Icono del menú"width= "70" height= "50">
+            </label>
+
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Principal</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="images/Logo.webp" alt="Logo de Agencia" >
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="s1.svg" alt="Icono social 1">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="s2.svg" alt="Icono social 2">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="s3.svg" alt="Icono social 3">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
+    <br><br><br><br><br><br><br><br>
 
     <main>
         <section class="service-intro">
@@ -27,35 +61,35 @@
 
         <section class="service-list">
             <div class="service-item">
-                <img src="Avion.jpeg" alt="Reserva de vuelos" width= "100%" height= "700">
+                <img src="Avion.jpeg" alt="Reserva de vuelos" width="100%" height="200">
                 <h3>Reservación de Vuelos</h3>
                 <p>Te ayudamos a encontrar los mejores vuelos a nivel mundial, con opciones flexibles y precios competitivos.</p>
                 <a href="#" class="cta-button">Ver más</a>
             </div>
 
             <div class="service-item">
-                <img src="Slider-1.webp" alt="Paquetes turísticos"  width= "100%" height= "700">
+                <img src="Slider-1.webp" alt="Paquetes turísticos" width="100%" height="200">
                 <h3>Paquetes Turísticos</h3>
                 <p>Disfruta de paquetes completos con transporte, alojamiento y actividades incluidas en destinos exóticos.</p>
                 <a href="#" class="cta-button">Ver más</a>
             </div>
 
             <div class="service-item">
-                <img src="alquiler-coches.webp" alt="Alquiler de coches">
+                <img src="Renta_de_coches.jpeg" alt="Alquiler de coches" width="100%" height="200">
                 <h3>Alquiler de Coches</h3>
                 <p>Viaja a tu ritmo alquilando un coche en tu destino. Tenemos opciones económicas y de lujo.</p>
                 <a href="#" class="cta-button">Ver más</a>
             </div>
 
             <div class="service-item">
-                <img src="Hoteles.jpeg" alt="Reservación de hoteles"  width= "100%" height= "700">
+                <img src="Hoteles.jpeg" alt="Reservación de hoteles" width="100%" height="200">
                 <h3>Reservación de Hoteles</h3>
                 <p>Encuentra el alojamiento perfecto, desde lujosos resorts hasta acogedores hoteles boutique.</p>
                 <a href="#" class="cta-button">Ver más</a>
             </div>
 
             <div class="service-item">
-                <img src="excursiones.webp" alt="Excursiones y Tours">
+                <img src="Excursiones.jpeg" alt="Excursiones y Tours" width="100%" height="200">
                 <h3>Excursiones y Tours</h3>
                 <p>Explora las mejores atracciones turísticas con nuestras excursiones guiadas y tours personalizados.</p>
                 <a href="#" class="cta-button">Ver más</a>
@@ -63,29 +97,46 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
-        <div class="txt">
-            <h4>Redes</h4>
+    <footer class="footer container">
+        <img class="logo-2" src="Logo.webp" alt="Logo de Agencia" width="100">
+        <div class="links">
+            <h4>WhatsApp</h4>
+            <ul>
+                <li><a href="#">5624149558</a></li>
+                <li><a href="#">1927466279</a></li>
+                <li><a href="#">7298722728</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Facebook</h4>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Redes sociales</h4>
             <div class="socials">
                 <a href="#">
-                    <div class=" social">
-                        <img src="s1.svg" alt="" >
+                    <div class="social">
+                        <img src="s1.svg" alt="Icono social 1">
                     </div>
                 </a>
                 <a href="#">
-                    <div class=" social">
-                        <img src="s2.svg" alt="" >
+                    <div class="social">
+                        <img src="s2.svg" alt="Icono social 2">
                     </div>
                 </a>
                 <a href="#">
-                    <div class=" social">
-                        <img src="s3.svg" alt="">
+                    <div class="social">
+                        <img src="s3.svg" alt="Icono social 3">
                     </div>
                 </a>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
