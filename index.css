@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+    body{
+        background-color: #FFFFFF;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .swiper-button-prev::after{
+        font-size: 25px;
+    }
+    .swiper-button-next::after{
+        font-size: 25px;
+    }
+    .swiper-button-next{
+        color: #DB241B;
+    }
+    .swiper-button-prev{
+        color: #DB241B;
+    }
+
+    .swiper-pagination-bullet{
+        background-color: #D3D2D2;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #DB241B;
+    }
+
+    .menu{
+        color:#40e0d0;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .menu-1{
+        margin-right: 180px;
+    }
+
+    .menu-2{
+        margin-left: 180px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-1{
+        width: 0;
+    }
+    .logo-2{
+        width: 150px;
+    }
+
+    .socials{
+        display: flex;
+    }
+
+    .social{
+        margin: 0 10px;
+        height: 40px;
+        width: 40;
+        border: 1px solid #DB241B;
+        border-radius: 50%;
+    }
+
+    .social:hover{
+        background-color: #DB241B;
+    }
+
+    .social img{
+        margin: 8px 0 0 10px;
+    }
+
+    .menu .navbar ul li{
+        position: relative;
+        float: left;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: #f9f9f9;
+        display: block;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #DB241B;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .menu-icono{
+        width: 25px;
+    }
+
+    .menu label{
+        cursor: pointer;
+        display: none;
+    }
+
+    .header-content{
+        margin-top: 200px;
+        padding-bottom: 50px;
+    }
+    .horario{
+        padding: 100px 0px;
+        background-color: #cccccc;
+    }
+
+    .horario-info h2{
+        font-size: 75px;
+        color: #21554f;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .horario-txt{
+        display: flex;
+        justify-content: space-between;
+    }
+    .txt {
+        color: #21554f;
+    }
+
+    .txt h4{
+        font-size: 18px;
+        color: #181818;
+        margin-bottom: 30px;
+    }
+
+    .txt p{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2{
+        display: none;
+    }
+
+    .logo-1{
+        width: 100px;
+    }
+
+    .logo-2{
+        width: 0;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .slider{
+        flex-direction: column;
+    }
+
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 50px;
+    }
+    .slider-txt p{
+        font-size: 16px;
+    }
+    * Carrusel styles */
+#carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.slide p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.slide ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide li {
+    margin-bottom: 10px;
+}
+
+.slide button {
+    background-color: #40e0d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide button:hover {
+    background-color: #20b2aa;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.calendar-container {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background-color: #40e0d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #20b2aa;
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.calendar thead {
+    background-color: #40e0d0;
+    color: #f0f8ff;
+}
+
+.calendar thead th {
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.calendar tbody td.inactive {
+    color: #ccc;
+}
+
+.nav-btn {
+    background-color: #40e0d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #20b2aa;
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar thead {
+    background-color: #40e0d0;
+    color: #f0f8ff
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #40e0d0;
+    border-top: 1px solid #FFFFFF;
+}
+
+.links {
+    margin: 20px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.links a:hover {
+    color: #40e0d0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    margin: 10px;
+}
+.logo-1{
+    width: 100px;
+}
+
+.logo-2{
+    width: 0;
+}
