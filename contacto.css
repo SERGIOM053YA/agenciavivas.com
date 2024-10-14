@@ -5,33 +5,126 @@ body {
     background-color: #f0f8ff;
 }
 
-header {
-    background-color: #40e0d0;
-    padding: 15px;
-    text-align: center;
+.menu{
+    color:#40e0d0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar{
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.menu-1{
+    margin-right: 180px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #7f7f7f;
-    font-weight: bold;
-    font-size: 16px;
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
 }
 
-nav ul li a:hover {
-    color: #40e0d0;
+.logo-1{
+    width: 0;
 }
+
+.logo-2{
+    width: 150px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40;
+    border: 1px solid #DB241B;
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: #DB241B;
+}
+
+.social img{
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #f9f9f9;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #DB241B;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu{
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.menu-2{
+    display: none;
+}
+
+.logo-1{
+    width: 100px;
+}
+
+.logo-2{
+    width: 0;
+}
+
+.menu label{
+    display: initial;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
 
 /* Formulario de contacto */
 form {
@@ -66,5 +159,107 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
+    background-color: #20b2aa;
+}
+.footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer img.logo-2 {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer .links {
+    margin-bottom: 20px;
+}
+
+.footer .links h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .links a {
+    color: #40e0d0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .links a:hover {
+    color: #fff;
+}
+.contact-section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Add a white background color */
+}
+
+.contact-section h2 {
+    color: #40e0d0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-section li {
+    flex-basis: calc(33% - 20px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #40e0d0;
+}
+
+.contact-section span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section input[type="tel"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section input[type="submit"] {
+    background-color: #40e0d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section input[type="submit"]:hover {
     background-color: #20b2aa;
 }
